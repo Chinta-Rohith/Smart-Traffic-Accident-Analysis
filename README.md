@@ -1,113 +1,120 @@
-# Smart Traffic Accident Analysis System
+# 🚦 Smart Traffic Accident Analysis System
 
-## Project Overview
-The **Smart Traffic Accident Analysis System** is a Big Data Analytics and Machine Learning project designed to analyze historical road accident records, identify geographical accident patterns, and predict accident severity.
+### Big Data Analytics and Machine Learning Project
 
-The system uses Apache Spark and PySpark to process accident data and machine learning algorithms to discover useful patterns that can support road safety analysis.
+## 📌 Project Overview
 
-## Objectives
-- Analyze historical road accident datasets.
+The Smart Traffic Accident Analysis System is a Big Data and Machine Learning application designed to analyze historical road accident records, discover geographical accident patterns, and predict accident severity.
+
+The project uses Apache Spark and PySpark for large-scale data processing and machine learning algorithms for accident pattern analysis.
+
+## 🎯 Objectives
+
+- Analyze historical road accident data.
 - Identify accident severity patterns.
-- Study accident frequency by time of day.
-- Discover geographical accident clusters using K-Means.
-- Predict accident severity using Random Forest.
-- Generate analytical visualizations and insights.
+- Analyze accidents based on time and location.
+- Identify geographical accident clusters.
+- Predict accident severity using Machine Learning.
+- Generate meaningful visualizations.
 
-## Dataset
+## 📂 Dataset Information
+
 - **Dataset:** US Accidents (March 2023)
 - **Source:** Kaggle
-- **Dataset Link:** https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
 - **Format:** CSV
-- **Features:** Accident severity, date and time, latitude, longitude, weather conditions, temperature, humidity, visibility, wind speed, and road features.
+- **Dataset URL:** https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
 
-## Technologies Used
-- Python
-- Apache Spark 3.5.3
-- PySpark
-- Spark SQL
-- Spark MLlib
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Google Colab
-- GitHub
+### Important Dataset Features
+- Severity
+- Start_Time
+- Start_Lat and Start_Lng
+- Temperature
+- Humidity
+- Visibility
+- Wind_Speed
+- Weather_Condition
+- Traffic_Signal
+- Junction
+- Crossing
 
-## Machine Learning Algorithms
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Programming |
+| Apache Spark 3.5.3 | Big Data Processing |
+| PySpark | Distributed Data Processing |
+| Spark SQL | Data Analysis |
+| Spark MLlib | Machine Learning |
+| Pandas | Data Handling |
+| Matplotlib | Visualization |
+| Seaborn | Statistical Graphs |
+| Google Colab | Development Environment |
+| GitHub | Version Control |
+
+## 🧠 Machine Learning Algorithms
 
 ### 1. K-Means Clustering
-K-Means clustering is used to group accident locations based on geographical coordinates (latitude and longitude).
+Used to group geographical accident locations using latitude and longitude coordinates.
 
-The implementation identifies five geographical clusters to analyze accident distribution.
+The implementation identifies five clusters.
 
 ### 2. Random Forest Classifier
-Random Forest is used to predict accident severity based on geographical, weather, and time-related features.
+Used to classify accident severity based on weather, geographical, and time-related features.
 
 A weighted Random Forest model is also implemented to address class imbalance.
 
-## Project Modules
-1. Dataset Collection and Loading
-2. Data Preprocessing
-3. Big Data Processing Using PySpark
-4. Accident Analysis Using Spark SQL
-5. Geographical Hotspot Clustering
-6. Accident Severity Prediction
-7. Model Evaluation
-8. Data Visualization
+## ⚙️ Project Workflow
 
-## Implementation Results
-- Successfully loaded the US Accidents dataset into Apache Spark.
+1. Dataset Collection
+2. Dataset Loading
+3. Data Preprocessing
+4. Big Data Processing using PySpark
+5. Accident Analysis using Spark SQL
+6. K-Means Clustering
+7. Random Forest Classification
+8. Model Evaluation
+9. Data Visualization
+
+## 📊 Project Outputs
+
+### Accident Severity Distribution
+
+![Severity Analysis](outputs/severity.png)
+
+### Accident Analysis by Hour
+
+![Hourly Analysis](outputs/hour_analysis.png)
+
+### Geographical Accident Clusters
+
+![Accident Clusters](outputs/clusters.png)
+
+## 📈 Implementation Results
+
+- Successfully loaded the accident dataset into Apache Spark.
 - Performed data preprocessing using PySpark.
-- Analyzed accident severity and accident frequency by hour using Spark SQL.
+- Analyzed accident severity and accident frequency.
 - Identified five geographical clusters using K-Means.
-- Trained Random Forest and weighted Random Forest classification models.
-- Saved trained models to Google Drive.
+- Trained Random Forest and weighted Random Forest models.
+- Saved trained models in Google Drive.
+- Generated analytical visualizations.
 
-### K-Means Cluster Results
+## 🚀 Future Enhancements
 
-| Cluster | Records |
-|---|---:|
-| 0 | 80,470 |
-| 1 | 118,825 |
-| 2 | 47,621 |
-| 3 | 88,466 |
-| 4 | 51,334 |
-
-*Cluster counts represent the sampled records used during clustering.*
-
-## How to Run
-1. Open the Google Colab notebook.
-2. Install the required PySpark and Python libraries.
-3. Connect Google Drive.
-4. Download the US Accidents dataset from Kaggle.
-5. Place the CSV file in the `Traffic_Dataset` folder in Google Drive.
-6. Execute the notebook cells in sequence.
-7. Review the clustering results, classification evaluation, and visualizations.
-
-## Repository Structure
-
-```text
-Smart-Traffic-Accident-Analysis/
-│
-├── README.md
-├── Smart_Traffic_Accident_Analysis.ipynb
-├── outputs/
-│   ├── severity.png
-│   ├── hour_analysis.png
-│   └── clusters.png
-│
-└── models/
-```
-
-## Future Enhancements
-- Real-time traffic accident data integration.
+- Real-time traffic data integration.
 - Interactive accident hotspot maps.
-- Advanced severity prediction models.
-- Integration with live traffic monitoring systems.
-- Improved model performance through class balancing and feature engineering.
+- Improved severity prediction.
+- Live traffic monitoring integration.
+- Advanced machine learning techniques.
 
-## Conclusion
-The Smart Traffic Accident Analysis System demonstrates how Big Data processing and Machine Learning can be combined to analyze historical road accident data. Apache Spark enables distributed data processing, while K-Means and Random Forest provide geographical clustering and accident severity classification capabilities.
+## 🏁 Conclusion
+
+This project demonstrates the application of Big Data Analytics and Machine Learning in road accident analysis. Apache Spark enables large-scale data processing, while K-Means and Random Forest provide geographical clustering and accident severity classification.
+
+The system can support data-driven road safety analysis and help identify important accident patterns.
+
+---
 
 **Developed by:** Rohith Chinta
 
